@@ -14,11 +14,15 @@
   background: linear-gradient(#87ceeb,#e0f6ff);
 }
 
+.pipe, .mario, .nuvem {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
 .pipe {
   position: absolute;
   bottom: 0;
   width: 80px;
-  animation: pipe-animation 1.5s infinite linear;
 }
 
 .mario {
@@ -37,6 +41,43 @@
   animation: clouds-animation 20s infinite linear;
 }
 
+button{
+  background: green;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border: none;
+  padding: 1 rem;
+  position: absolute;
+  right: 50vw;
+  top: 50vh;
+  cursor: pointer;
+  z-index: 1;
+}
+    
+botton-hover {
+  border: 2px solid green;
+  background: none;
+  color: green;
+}
+
+botton.start {
+  display: block;
+}
+
+.score{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 8px;
+  font-family: 'Arial, sans-serif;
+}
+
+
+  
 @keyframes pipe-animation{
   from {right: -80px;}
   to {right: 100%;}
