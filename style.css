@@ -76,8 +76,31 @@ botton.start {
   font-family: 'Arial, sans-serif;
 }
 
+.score span {
+  font-weight: bold;
+  font-size:30px;
+}
 
-  
+.game-over {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  positiok: fixed;
+  top: 0;
+  left: 0;
+}
+
+.game-over h1{
+  font-size: 3rem;
+  color: red;
+  text-align: center;
+  margin-top: 15rem;
+}
+
 @keyframes pipe-animation{
   from {right: -80px;}
   to {right: 100%;}
